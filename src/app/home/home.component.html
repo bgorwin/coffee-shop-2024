@@ -1,0 +1,111 @@
+<main>
+  <div class="hero-banner h-[700px;] bg-slate-200">
+    <div class="container mx-auto flex items-center justify-center h-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+        <!-- Left Side Text -->
+        <div class="flex flex-col justify-center space-y-4">
+          <div class="hero-text">
+            <h1
+              class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent font-extrabold text-5xl md:text-6xl lg:text-8xl mb-5"
+            >
+              {{ title }}<span class="text-black"><br />Coffee Shop</span>
+            </h1>
+            <p class="text-lg mb-3">
+              Crafted with Precision, Brewed with Passion
+            </p>
+          </div>
+          <div class="hero-button my-auto">
+            <a
+              href="/about"
+              class="py-3 px-5 bg-black text-white rounded-sm hover:bg-white hover:text-black transition ease-in-out"
+              >About Us</a
+            >
+          </div>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="flex flex-col justify-center space-y-4">
+          <img
+            class="md:w-full lg:w-full w-3/4 h-auto p-5 mx-auto object-cover rounded-lg transition transform hover:scale-105 rotate-12"
+            src="../assets/images/espress-latte-art-2.png"
+            alt="Cortado cup of espresso with a tulip latte art."
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto flex items-center justify-center h-[600px]">
+    <div class="relative w-full h-full">
+      <h2
+        class="p-5 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-4xl md:text-6xl font-semibold absolute top-60 left-6 w-3/4 z-10"
+      >
+        <span class="text-black">Hi, We’re</span> Brew & Bloom
+        <span class="text-black"
+          >, a collective of creators who Love coffee and espresso.</span
+        >
+      </h2>
+
+      <img
+        class="absolute bottom-0 md:bottom-5 right-36 w-40 md:w-96 h-auto p-5"
+        src="../assets/images/civil-goat-austin.png"
+        alt="Barista pouring a courtado with latte art"
+      />
+    </div>
+  </div>
+
+  <div class="container mx-auto h-auto w-full flex justify-center align-middle">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+      <div class="flex justify-center align-middle">
+        <img
+          class="w-full h-auto object-cover rounded-md p-8"
+          src="../../assets/images/simply-coffee-houston.jpg"
+          alt="Simply Coffee Shop In Houston. Barista preparing an espresso."
+        />
+      </div>
+      <div
+        class="flex justify-center align-middle items-center flex-col w-full"
+      >
+        <p
+          class="py-1 px-4 mb-3 rounded-md text-white bg-blue-600 inline-block mr-auto"
+        >
+          Brew & Bloom
+        </p>
+        <h3 class="text-6xl font-bold uppercase mb-5">
+          Coffee Is For Everyone
+        </h3>
+        <p class="text-base">
+          Brewed for All: From the Everyday Sipper to the Aficionado, Coffee is
+          the Liquid Joy We All Share.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full my-10">
+    <img
+      class="relative w-full h-96 object-cover"
+      src="../../assets/images/andrew-tanglao-OuJDvYPgG2E-unsplash.jpg"
+      alt="Commercial espresso machine"
+    />
+    <div class="absolute bottom-[-10%;] left-[8%;] rotate-[-10deg]">
+      <p
+        class="p-3 bg-white text-black border border-black text-xl font-semibold rounded-lg"
+      >
+        Fresh <br /><span class="italic">Roast</span>
+      </p>
+    </div>
+  </div>
+
+  <section class="container px-5 mx-auto my-24">
+    <p class="text-5xl font-bold mb-5">Our Top Coffees</p>
+    <p class="text-base mb-10 w-1/2">
+      Indulge in our top coffee selections, each crafted to perfection with the
+      finest beans and expert techniques. From rich, bold espressos to creamy,
+      smooth lattes, our signature drinks are sure to satisfy every coffee
+      lover's palate. Discover your new favorite today and experience the best
+      of what we brew.
+    </p>
+    <app-coffee-card class="mt-14"></app-coffee-card>
+  </section>
+</main>
