@@ -1,26 +1,26 @@
 <div class="card-grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
   <div
     *ngFor="let coffeeProduct of coffeeProducts"
-    class="card border border-b-slate-800 shadow-md rounded-tl-md rounded-tr-md"
+    class="card bg-slate-100 p-4 rounded-xl"
   >
-    <div class="image mb-4">
+    <div class="image mb-3">
       <img
-        class="object-cover w-full h-auto rounded-tl-md rounded-tr-md"
+        class="object-cover w-full h-auto rounded-xl"
         [src]="coffeeProduct.imageUrl"
         alt="{{ coffeeProduct.name }}"
       />
     </div>
-    <div class="card-body p-4">
-      <div class="card-title mb-4">
-        <h3 class="text-3xl font-semibold">{{ coffeeProduct.name }}</h3>
+    <div class="card-body px-1 pt-1">
+      <div class="card-title ps-1 mb-4">
+        <h3 class="text-2xl font-semibold">{{ coffeeProduct.name }}</h3>
       </div>
       <div class="card-description mb-4">
+        <div class="coffee-price flex justify-stretch mt-auto">
+          <p class="text-gray-500 text-md mb-3">${{ coffeeProduct.price }}</p>
+        </div>
         <p class="text-base">
           {{ coffeeProduct.description }}
         </p>
-      </div>
-      <div class="coffee-price flex justify-stretch mt-auto">
-        <p>${{ coffeeProduct.price }}</p>
       </div>
     </div>
   </div>
