@@ -17,9 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "../docs",
+            "outputPath": "docs/coffee-shop-2024",
             "index": "src/index.html",
-            "browser": "",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -103,9 +103,6 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
