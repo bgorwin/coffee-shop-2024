@@ -46,7 +46,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/coffee-shop-2024/",
+              "baseHref": "docs/coffee-shop-2024/",
               "outputPath": "docs",
               "budgets": [
                 {
